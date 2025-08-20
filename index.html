@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vintage ArchiAI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🏛️ Vintage ArchiAI</h1>
+    <p>Organize seus ambientes com inteligência artificial</p>
+  </header>
+
+  <main>
+    <!-- Cadastro do ambiente -->
+    <section class="card">
+      <h2>Cadastro do Ambiente</h2>
+      <form id="ambienteForm">
+        <label>Nome do Ambiente:
+          <input type="text" id="nomeAmbiente" required>
+        </label>
+        <label>Dimensões (Largura x Altura x Profundidade):
+          <input type="text" id="dimensoes" placeholder="Ex: 5m x 3m x 4m" required>
+        </label>
+        <label>Detalhes (porta, janela etc.):
+          <textarea id="detalhes"></textarea>
+        </label>
+        <label>Foto do ambiente:
+          <input type="file" id="fotoAmbiente" accept="image/*">
+        </label>
+        <button type="submit">Cadastrar Ambiente</button>
+      </form>
+    </section>
+
+    <!-- Cadastro de itens -->
+    <section class="card">
+      <h2>Itens/Móveis</h2>
+      <form id="itemForm">
+        <label>Nome do item:
+          <input type="text" id="nomeItem" required>
+        </label>
+        <label>Medidas:
+          <input type="text" id="medidasItem" placeholder="Ex: 2m x 1m x 0.5m" required>
+        </label>
+        <button type="submit">Adicionar Item</button>
+      </form>
+      <ul id="listaItens"></ul>
+    </section>
+
+    <!-- Sugestões IA -->
+    <section class="card">
+      <h2>Sugestões da IA</h2>
+      <button id="gerarSugestoes">Gerar Ideias</button>
+      <div id="sugestoes"></div>
+    </section>
+
+    <!-- Catálogo -->
+    <section class="card">
+      <h2>Catálogo</h2>
+      <div id="catalogo">
+        <p>Se a IA sugerir algo que você não tem, compre aqui:</p>
+        <ul>
+          <li>Sofá Vintage - <a href="#">Comprar</a></li>
+          <li>Luminária Retro - <a href="#">Comprar</a></li>
+          <li>Poltrona de Couro - <a href="#">Comprar</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Comunidade -->
+    <section class="card">
+      <h2>Comunidade</h2>
+      <div id="chatBox"></div>
+      <form id="chatForm">
+        <input type="text" id="chatInput" placeholder="Compartilhe uma dica..." required>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Vintage ArchiAI</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
