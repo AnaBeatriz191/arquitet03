@@ -1,0 +1,69 @@
+/* Estilo Vintage */
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f3e5d8;
+  color: #3e2f1c;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #d4a373;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+main {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fffdf7;
+  border: 2px solid #c9a66b;
+  border-radius: 10px;
+  padding: 1.2rem;
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.1);
+}
+
+button {
+  background: #c9a66b;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+button:hover {
+  background: #a67c52;
+}
+
+#chatBox {
+  background: #fff8f0;
+  border: 1px solid #c9a66b;
+  height: 150px;
+  overflow-y: auto;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+footer {
+  background: #d4a373;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  color: white;
+}
